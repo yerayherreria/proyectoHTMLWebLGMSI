@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="website icon" type="png" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Web Andalucia</title>
+  </head>
+  <body>
+    <!--Cabecera-->
+    <header class="container-fluid bg-success d-flex justify-content-center">
+        <p class="text-light mb-0 p-3 fs-5">Esta página es una tarea de clase</p>
+    </header>
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <span class="text-success fs-5 fw-bold">Andalucía Progresa</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Deporte">Deportes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="musica.html">Música</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="gastronomia.html">Gastronomía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+              <button class="btn btn-success" type="button">Suscribete</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      <!--Carrusel de imagenes-->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/granada.jpg" class="d-block w-100" alt="granada">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/granada2.jpg" class="d-block w-100" alt="granada">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ronda.jpg" class="d-block w-100" alt="malaga">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Contenido-->
+      <section class="pt-4">
+        <h2 class="p-2 fs-2 "><a name="Deporte">Deportes.</a></h2>
+        <p class="p-2">El deporte andaluz está marcado, como el resto de España, por el
+            predominio del fútbol sobre cualquier otra modalidad deportiva. Este deporte
+            fue introducido en España por ciudadanos de origen anglosajón que trabajaban
+            en empresas mineras de la provincia de Huelva y que rápidamente difundieron 
+            el deporte entre la población local. El Recreativo de Huelva es el club 
+            decano de España ya que fue fundado en 1889. El primer equipo andaluz que 
+            jugó en primera división fue el Real Betis Balompié
+            en la temporada 1932-33. La primera liga de un equipo andaluz la consiguió 
+            el Real Betis Balompié en la temporada 1934-35, también fue el primer club 
+            andaluz en participar en la UEFA Champions League en la temporada 2005-06, 
+            también el Real Betis ha conseguido proclamarse campeón de copa tres veces; 
+            el Sevilla FC le siguió en la temporada 1945-46 y actualmente son los únicos 
+            campeonatos ligueros conquistados por equipos andaluces. El Sevilla fue el 
+            primer equipo de la comunidad autónoma en clasificarse para la máxima 
+            competición europea: la Copa de Europa de la temporada 1957-58, alcanzando 
+            los cuartos de final, también se clasificó más recientemente en los años 
+            2007-08 y 2009-10 llegando en ambos años a los cuartos de final y en 2015-16, 
+            además de poseer seis UEFA Europa League y una Supercopa de Europa, una Liga,
+            cinco Copas de España y 1 Supercopa de España.
+        </p> 
+        <div class="text-center p-2">
+            <img alt="Betis" src="./img/campofutbol.png" height="200px">
+        </div>
+        <p class="p-2">En la Primera División Española de Fútbol militan en la actualidad 
+            cuatro equipos: U. D. Almería, Betis, Sevilla Fútbol Club y Cádiz Club de 
+            Fútbol y en la Segunda División Española de Fútbol, dos: Málaga Club de Fútbol 
+            y Granada. En Segunda B grupo 4.º están los siguientes equipos: Recreativo 
+            de Huelva, Balompédica Linense, Marbella, San Fernando, Córdoba, Sevilla "B", 
+            Betis "B", Granada "B", Atlético Sanluqueño, Cádiz "B", Algeciras CF, El Ejido 
+            2012, Linares. En la categoría de Tercera División, Andalucía cuenta con dos 
+            grupos: el IX que engloba a los equipos de las provincias orientales de Jaén, 
+            Granada, Almería y Málaga; y el grupo X con los de las provincias occidentales 
+            como Sevilla, Córdoba, Cádiz y Huelva. En fútbol sala, hay cuatro representantes 
+            andaluces en la máxima categoría es el Jaén Paraíso Interior Fútbol Sala, Córdoba 
+            Patrimonio de la Humanidad, Real Betis Futsal y Besoccer UMA Antequera, y en 
+            segunda división milita Mengíbar Fútbol Sala.
+        </p>
+        <p class="p-2">En baloncesto, la región cuenta con uno de los equipos señeros de España, 
+            el Unicaja Málaga, que después de ser subcampeón en la temporada 94-95 y ganar el 
+            primer título europeo, la Copa Korać, en 2001, consiguió la primera Liga ACB 
+            2005-06 para Andalucía y también la Copa del Rey 2005. En la actualidad, junto al 
+            Coosur Real Betis, son los dos únicos equipos andaluces que militan en la Liga 
+            ACB. El Clínicas Rincón, equipo asociado al Unicaja Málaga, participa en la LEB Oro.
+        </p>
+        <p class="p-2">A diferencia del baloncesto, el balonmano andaluz no acaba de despegar 
+            debido a la falta de equipos que luchen por títulos. En la actualidad, un equipo 
+            representa a la comunidad en la Liga ASOBAL, máxima categoría del balonmano 
+            nacional y es el Club Balonmano Puente Genil aunque muy lejos aún de tener la 
+            misma repercusión mediática de otros deportes y de optar a títulos a máximo 
+            nivel nacional. El Balonmano Antequera, Keymare Almería y el Algeciras Balonmano 
+            estuvieron hace poco en la élite del balonmano andaluz
+        </p>
+        <p class="p-2">En el voleibol andaluz destaca el Unicaja Almería, siendo el equipo 
+            más laureado del voleibol masculino en España, con 22 títulos oficiales en su haber. 
+            Actualmente compite en la Superliga masculina de voleibol de España.
+        </p>
+        <p class="p-2">El tenis de mesa, a nivel de títulos conseguidos, es el deporte donde 
+            la región juega un mayor papel a nivel nacional. Hay dos equipos; el Cajasur 
+            Priego TM y el Caja Granada TM, máximo exponente y representante de este deporte 
+            en España. El club granadino ha ganado más de 20 ligas (casi todas consecutivas) 
+            y 14 Copas del Rey (también consecutivas). El enfrentamiento entre ambos es el 
+            más importante del país en este deporte ya que estos son los dominadores de la 
+            Liga ENEBÉ en los últimos años.
+        </p>
+      </section>
+      <!--Sidebar-->
+      <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Redes Sociales</button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Redes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul type="circle">
+            <li><a href="https://es-es.facebook.com/" target="_blank"><b>Facebook</b></a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"><b>Twitter</b></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><b>Instagram</b></a></li>
+            <li><a href="https://github.com/" target="_blank"><b>GitHub</b></a></li>
+            <li><a href="https://www.linkedin.com/login/es" target="_blank"7><b>Linkedln</b></a></li>
+        </ul></p> 
+        </div>
+      </div>
+      <!--Footer-->
+      <footer class="bg-success text-center text-white">
+        <!--Nota-->
+        <img src="./img/logo.png" class="p-4" width="200px" alt="logo">
+
+        <div class="container p-4">
+          <section class="mb-4">
+            <p>
+              Página realiza por alumnado del Ciclo Superior DAW. Las imágenes
+              son propiedad de sus dueños.La web solo es un ejercicio de clase.
+              No apoyamos ni promovemos ningun tipo de infracción.
+            </p>
+          </section>
+        </div>
+        <!--Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright: I.E.S. Jacarandá
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="website icon" type="png" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Web Andalucia</title>
+  </head>
+  <body>
+    <!--Cabecera-->
+    <header class="container-fluid bg-success d-flex justify-content-center">
+        <p class="text-light mb-0 p-3 fs-5">Esta página es una tarea de clase</p>
+    </header>
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <span class="text-success fs-5 fw-bold">Andalucía Progresa</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" target="_parent">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="deporte.html" target="_parent">Deportes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="musica.html" target="_parent">Música</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="gastronomia.html" target="_parent">Gastronomía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contac">Contacto</a>
+              </li>
+            </ul>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+              <button class="btn btn-success" type="button">Suscribete</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      <!--Carrusel de imagenes-->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/granada.jpg" class="d-block w-100" alt="granada">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/granada2.jpg" class="d-block w-100" alt="granada">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ronda.jpg" class="d-block w-100" alt="malaga">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Contenido-->
+      <section class="pt-4">
+        <table align="center" border="1">
+            <tr>
+                <td>
+                    <div id="contenedor" class="p-2">
+                        <form method="get" action="https://iesjacaranda.es/lmsgi/resultado.php">
+                            <h2 class="p-2 fs-2"><a name="contac">Contacto.</a></h2>
+                            <ul class="form">
+                            <li class="izquierda">
+                                <label class="titulo" for="nombre">Nombre y apellidos <span class="requerido">*</span></label>
+                                <div>
+                                <span class="completo">
+                                    <input id="nombre" name="nombre" value="" />
+                                    <label for="nombre">Nombre</label>
+                                </span>
+                                <br>
+                                <span class="completo">
+                                    <input id="apellido1" name="apellido1" value="" />
+                                    <label for="apellido1">Primer apellido</label>
+                                </span>
+                                <br>
+                                <span class="completo">
+                                    <input id="apellido2" name="apellido2" value="" />
+                                    <label for="apellido2">Segundo apellido</label>
+                                </span>
+                                </div>
+                                <br>
+                                <p class="ayuda">No te olvides de escribir también tu segundo apellido</p>
+                            </li>
+                    
+                            <li class="derecha">
+                                <label class="titulo" for="direccion">Dirección <span class="requerido">*</span></label>
+                    
+                                <div>
+                                <span class="completo">
+                                    <input id="direccion" name="direccion" value="" />
+                                    <label for="direccion">Calle, número, piso, puerta</label>
+                                </span>
+                                <br>
+                                <span class="tercio">
+                                    <input id="codigopostal" name="codigopostal" value="" />
+                                    <label for="codigopostal">Código postal</label>
+                                </span>
+                                <br>
+                                <span class="dostercios">
+                                    <input id="municipio" name="municipio" value="" />
+                                    <label for="municipio">Municipio</label>
+                                </span>
+                                <br>
+                                <span class="tercio">
+                                    <select id="provincia" name="provincia">
+                                    <option value=""></option>
+                                    <option value="provincia1">SEV</option>
+                                    <option value="provincia2">MAD</option>
+                                    <option value="provincia3">TOL</option>
+                                    </select>
+                                    <label for="provincia">Provincia</label>
+                                </span>
+                    
+                                <span class="dostercios">
+                                    <select id="pais" name="pais">
+                                    <option value=""></option>
+                                    <option value="pais1">ESP</option>
+                                    <option value="pais2">FRA</option>
+                                    <option value="pais3">POR</option>
+                                    </select>
+                                    <label for="pais">País</label>
+                                </span>
+                                </div>
+                                <br>
+                                <p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p>
+                            </li>
+                    
+                            <li class="izquierda">
+                                <label class="titulo" for="email">Email</label>
+                    
+                                <div>
+                                <span class="completo">
+                                    <input id="email" name="email" value="" />
+                                </span>
+                                </div>
+                    
+                                <p class="ayuda">Asegúrate de que sea válido</p>
+                            </li>
+                    
+                            <li class="derecha">
+                                <label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label>
+                    
+                                <div>
+                                <span class="mitad">
+                                    <input id="telefonofijo" name="telefonofijo" value="" />
+                                    <label for="telefonofijo">Fijo</label>
+                                </span>
+                                &nbsp;&nbsp;&nbsp;
+                                <span class="mitad">
+                                    <input id="telefonomovil" name="telefonomovil" value="" />
+                                    <label for="telefonomovil">Móvil</label>
+                                </span>
+                                </div>
+                    
+                                <p class="ayuda">Sin prefijo de país y sin espacios en blanco</p>
+                            </li>
+                            <br>
+                            <div class="text-center">
+                                <input id="alta" type="submit" value="Contactar &rarr;" />
+                            </div>
+                            </ul>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+      </section>
+      <!--Sidebar-->
+      <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Redes Sociales</button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Redes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul type="circle">
+            <li><a href="https://es-es.facebook.com/" target="_blank"><b>Facebook</b></a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"><b>Twitter</b></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><b>Instagram</b></a></li>
+            <li><a href="https://github.com/" target="_blank"><b>GitHub</b></a></li>
+            <li><a href="https://www.linkedin.com/login/es" target="_blank"7><b>Linkedln</b></a></li>
+        </ul></p> 
+        </div>
+      </div>
+      <!--Footer-->
+      <footer class="bg-success text-center text-white">
+        <!--Nota-->
+        <img src="./img/logo.png" class="p-4" width="200px" alt="logo">
+
+        <div class="container p-4">
+          <section class="mb-4">
+            <p>
+              Página realiza por alumnado del Ciclo Superior DAW. Las imágenes
+              son propiedad de sus dueños.La web solo es un ejercicio de clase.
+              No apoyamos ni promovemos ningun tipo de infracción.
+            </p>
+          </section>
+        </div>
+        <!--Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright: I.E.S. Jacarandá
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
