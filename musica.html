@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="website icon" type="png" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Web Andalucia</title>
+  </head>
+  <body>
+    <!--Cabecera-->
+    <header class="container-fluid bg-success d-flex justify-content-center">
+        <p class="text-light mb-0 p-3 fs-5">Esta página es una tarea de clase</p>
+    </header>
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <span class="text-success fs-5 fw-bold">Andalucía Progresa</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="deporte.html">Deportes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#musica">Música</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="gastronomia.html">Gastronomía</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+              <button class="btn btn-success" type="button">Suscribete</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      <!--Carrusel de imagenes-->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/granada.jpg" class="d-block w-100" alt="granada">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/granada2.jpg" class="d-block w-100" alt="granada">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ronda.jpg" class="d-block w-100" alt="malaga">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Contenido-->
+      <section class="pt-4">
+        <h2 class="p-2 fs-2"><a name="musica">Música.</a></h2>
+        <p class="p-2">Se conoce como música andaluza, no solo a la música tradicional 
+          propia de Andalucía, sino a un tipo de música específico, tanto de género 
+          popular como culto, definido por unas características propias en el ámbito 
+          métrico, melódico y armónico. Por ello, puede hablarse con propiedad de música 
+          andaluza compuesta por compositores no andaluces. En el ámbito de la musicología, 
+          a esta tendencia suele llamársele andalucismo musical.
+        </p>
+        <p class="p-2">El flamenco está considerado actualmente como Patrimonio Cultural 
+          Inmaterial de la Humanidad y es Patrimonio Cultural Etnológico Inmaterial de 
+          Andalucía. El flamenco es un género de música y danza que se originó y desarrolló 
+          en Andalucía que data tal y como lo conocemos actualmente del siglo xviii, que 
+          tiene como base la música y la danza andaluza y en cuyo desarrollo han influido 
+          notablemente los andaluces de etnia gitana. El cante, el toque y el baile son 
+          las principales facetas del flamenco el cual se ha convertido en uno de los 
+          principales referentes de la cultura andaluza y española en todo el mundo. 
+          Actualmente la ciudad andaluza de Jerez de la Frontera está considerada como 
+          la cuna del flamenco actual.
+        </p>
+        <div class="text-center p-2">
+          <img alt="Baile flamenco" src="./img/flamenco.png" width="200px">
+      </div>
+        <p class="p-2">Fundamentales en la historia de la música en Andalucía son los 
+          compositores Cristóbal de Morales, Francisco Guerrero, Francisco Correa de 
+          Arauxo, Manuel García, Manuel de Falla, Joaquín Turina, Manuel Castillo y el 
+          guitarrista Andrés Segovia, padre de la guitarra clásica moderna.
+        </p>
+        <p class="p-2">Contemporáneamente cabe hacer mención a grandes artistas folclóricos 
+          de la copla y el cante hondo, como Estrellita Castro, Rocío Jurado, Lola Flores 
+          (reconocida por su temperamento y personalidad artística como La Faraona), 
+          Juanito Valderrama y el revolucionario Camarón de la isla, considerado por gran 
+          parte de la crítica especializada como uno de los mejores cantaores de la 
+          historia. Entre los guitarristas de flamenco cabe mencionar a Paco de Lucía.
+        </p>
+        <p class="p-2">En ámbitos de música moderna destaca en el campo del rock andaluz, 
+          el grupo Triana, máximo exponente de este género. También destaca el grupo de 
+          Medina Azahara y más reciente, el grupo Califato ¾ que fusiona música folclórica 
+          andaluza con rasgos electrónicos. El dúo Los del Río se hizo mundialmente popular 
+          con su tema Macarena, el cual se escuchó en la final de la Superbowl 
+          estadounidense y que fue utilizado como música de campaña electoral por el Partido 
+          Demócrata de los Estados Unidos. También cabe destacar al cantautor y poeta 
+          Joaquín Sabina, al granadino José Ignacio Lapido (líder de la banda 091), a Isabel 
+          Pantoja y a Rosa López, la cual representó a España en el festival de Eurovisión 
+          en el 2002 y a David Bisbal y al cantaor flamenco granadino Juan Pinilla.
+        </p>
+      </section>
+      <!--Sidebar-->
+      <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Redes Sociales</button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Redes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul type="circle">
+            <li><a href="https://es-es.facebook.com/" target="_blank"><b>Facebook</b></a></li>
+            <li><a href="https://twitter.com/?lang=es" target="_blank"><b>Twitter</b></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><b>Instagram</b></a></li>
+            <li><a href="https://github.com/" target="_blank"><b>GitHub</b></a></li>
+            <li><a href="https://www.linkedin.com/login/es" target="_blank"7><b>Linkedln</b></a></li>
+        </ul></p> 
+        </div>
+      </div>
+      <!--Footer-->
+      <footer class="bg-success text-center text-white">
+        <!--Nota-->
+        <img src="./img/logo.png" class="p-4" width="200px" alt="logo">
+
+        <div class="container p-4">
+          <section class="mb-4">
+            <p>
+              Página realiza por alumnado del Ciclo Superior DAW. Las imágenes
+              son propiedad de sus dueños.La web solo es un ejercicio de clase.
+              No apoyamos ni promovemos ningun tipo de infracción.
+            </p>
+          </section>
+        </div>
+        <!--Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright: I.E.S. Jacarandá
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
